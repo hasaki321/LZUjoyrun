@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+  <head>
+    <title>Joyrun!</title>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="Base64.js" type="text/javascript"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="newjavascript.js" type="text/javascript"></script>
+    <link href="newcss.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body onload="">
+    <div class="out-wrapper">
+      <h1 style="text-align: center">兰大悦跑</h1>
+      <div class="left-wrapper">
+        <ul>
+          <li>
+            <input
+              class="input"
+              placeholder="请输入学号"
+              type="text"
+              id="stid"
+            />
+          </li>
+          <li>
+            <input
+              class="input"
+              placeholder="请输入密码"
+              value="123456"
+              type="text"
+              id="spwd"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="right-wrapper">
+        <ul>
+          <li>
+            <a>场所 </a>
+            <select onchange="selectcity()" id="place">
+              <option>随机</option>
+              <option>东操</option>
+              <option>西操</option>
+            </select>
+          </li>
+          <li>
+            <a>距离 </a>
+            <input class="input_" value="2.0" type="text" id="dis" />
+          </li>
+          <li>
+            <a>km/min</a>
+            <input class="input_" value="5.50" type="text" id="pace" />
+          </li>
+          <li>
+            <a>步/min </a>
+            <input class="input_" value="170" type="text" id="freq" />
+          </li>
+        </ul>
+      </div>
+      <button id="submit" type="submit" onclick="Submit()">提交</button>
+      <br />
+      <a
+        href="https://github.com/RinCloud/PKURunningHelper"
+        style="text-align: center"
+      >
+        改自:PKURunningHelper</a
+      >
+      <img id="submit_img" />
+      <br />
+    </div>
+    <div id="showdiv">
+      <img id="img" />
+      <a id="show"></a>
+    </div>
+    <div id="errordiv">
+      <a id="error_text">error</a>
+    </div>
+  </body>
+</html>
